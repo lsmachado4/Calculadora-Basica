@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/style.css" rel="stylesheet">
-    <!--chamada para css interagir com o html-->
+    <link href="styles/style.css" rel="stylesheet"><!--chamada para css interagir com o html-->
+    
     <title>CALCULADORA</title>
     <!--Título que fica na aba do site-->
 </head>
@@ -20,7 +20,7 @@
         <!--Nome do cabeçalho-->
     </header>
 
-    <form>
+    <div id="form">
         <!--Tag par criar formulários-->
 
         <!--Type é o tipo de informação que será recebido;
@@ -28,7 +28,7 @@
         Placeholder são para textos fantasmas no formulário -->
         <input type="number" id="num1" placeholder="Digite o primeiro número "> <br><br>
         <!--Serve para quebra de  linha o "<br>"-->
-        <select id="selector">
+        <select id="seletor">
             <!--  Selecionador para as opções (símbolos das operações)-->
 
             <option value="+">+</option>
@@ -38,21 +38,18 @@
             <option value="/">÷</option>
         </select><br> <br>
         <input type="number" id="num2" placeholder="Digite o segundo número"> <br><br>
-        <button>Calculadora</button>
+        <button onclick="calcular()">Calcular</button> <!--Onclick apresentar : Só quando clicar.-->
+   
+  </div>
 
-    </form>
-
-    <div>
+     <div >
         <!--Divisão não semântica-->
         <h3 id="resultado">Resultado</h3>
-        <form>
-            <input type="number" id="result" placeholder="Resultado">
-        </form>
-    </div>
-    <footer>
+     </div>
+        <footer>
         <!--Rodapé-->
         <p>
-        <h3>Desenvolvedor: Lucas Machado</h3>
+        <h4>Desenvolvedor: Lucas Machado</h4>
 
 
         </p>
@@ -82,6 +79,6 @@
 
     </footer>
 <script src="./scripts/script.js"></script> <!--Chamar do JS, lembrando que a recomendação é que fique na parte de baixo por possíveis atualizações de bugues em páginas-->
-</body>
 
+</body>
 </html>
