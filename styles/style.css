@@ -1,0 +1,56 @@
+body{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(194, 140, 245);   
+}
+
+h1{
+    font-family: sans-serif ;
+    font-weight: bolder;}
+footer{
+            text-align: left ; }
+input{
+    width: 85%;
+    height: 50px;
+    border-color: rgb(0, 0, 0);
+    
+}
+form{
+    width: 80%;
+    height: 100%;
+    
+}
+:placeholder-shown{
+    text-align: center;
+    font-size: large;
+    
+}
+button{
+    background-color: rgb(0, 255, 213);
+    color: black;
+    border: none;
+    width: 85%;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: large;
+    border-radius: 20px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(241, 199, 12);
+}
+#resultado{
+    font-family: sans-serif;
+    text-align: center;
+}
+#selector{
+    box-sizing: border-box;
+    width: 5%;
+    height: 40px;
+}
+option{
+    text-align: center;
+    font-size: large;
+}

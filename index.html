@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--Colocar o site em português-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet">
+    <!--chamada para css interagir com o html-->
+    <title>CALCULADORA</title>
+    <!--Título que fica na aba do site-->
+</head>
+
+<body>
+
+    <header>
+        <!--Cabeçalho do projeto dentro da página-->
+        <h1>Calculadora Básica</h1>
+        <!--Nome do cabeçalho-->
+    </header>
+
+    <form>
+        <!--Tag par criar formulários-->
+
+        <!--Type é o tipo de informação que será recebido;
+        id é o identificador para o Css;
+        Placeholder são para textos fantasmas no formulário -->
+        <input type="number" id="num1" placeholder="Digite o primeiro número "> <br><br>
+        <!--Serve para quebra de  linha o "<br>"-->
+        <select id="selector">
+            <!--  Selecionador para as opções (símbolos das operações)-->
+
+            <option value="+">+</option>
+            <!--Opções que ficam dentro do  select-->
+            <option value="-">-</option>
+            <option value="*">x</option>
+            <option value="/">÷</option>
+        </select><br> <br>
+        <input type="number" id="num2" placeholder="Digite o segundo número"> <br><br>
+        <button>Calculadora</button>
+
+    </form>
+
+    <div>
+        <!--Divisão não semântica-->
+        <h3 id="resultado">Resultado</h3>
+        <form>
+            <input type="number" id="result" placeholder="Resultado">
+        </form>
+    </div>
+    <footer>
+        <!--Rodapé-->
+        <p>
+        <h3>Desenvolvedor: Lucas Machado</h3>
+
+
+        </p>
+        <!--Parágrafo-->
+
+        <nav>
+            <!--(<nav>) representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página, ou seja, uma seção com links de navegação.-->
+
+
+            <ul>
+                <!-- <ul>representa uma lista de itens sem ordem rígida, isto é, uma coleção de itens que não trazem uma ordenação numérica e as suas posições, nessa lista, são irrelevantes. -->
+                <h4>Contato:</h4>
+                <li>
+                    <a href=" https://www.linkedin.com/in/lucassmachadodev/">Linkedin</a>
+                    <!--<a> com o atributo href cria-se um hiperligação nas páginas web-->
+                 </li>
+                <li>
+                    <a href="https://www.instagram.com/lucassmachado_/?hl=pt-br">Instagram</a>
+                    <!--<a> com o atributo href cria-se um hiperligação nas páginas web-->
+
+                </li>
+                <!--<li>  é usado para representar um item que faz parte de uma lista. Este item deve estar contido em um elemento pai: uma lista ordenada (<ol>), uma lista desordenada (<ul>), ou um menu (<menu> (en-US)) e representa uma única entidade dessa lista. -->
+
+
+            </ul>
+        </nav>
+
+    </footer>
+<script src="./scripts/script.js"></script> <!--Chamar do JS, lembrando que a recomendação é que fique na parte de baixo por possíveis atualizações de bugues em páginas-->
+</body>
+
+</html>
